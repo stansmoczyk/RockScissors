@@ -18,7 +18,7 @@ else if (randomNumber === 2){
 
 function playRound(playerSelection, computerSelection) {
     //my code
-    console.log('Player choose: ' + playerSelection + ' Computer choose: ' + computerSelection);
+    console.log('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection);
 }
 
 const playerSelection = "rock";
