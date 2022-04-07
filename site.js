@@ -19,13 +19,19 @@ else if (randomNumber === 2){
 function playRound(playerSelection, computerSelection) {
     let computerWins = 0;
     let playerWins = 0;
+    let player = playerSelection;
+    let puter = computerSelection
 
     for (let i =0; i <5; i++){
+         
         //code to play 5 rounds here
-        
+        console.log(comparePlay(player, puter));
+    
+    
+    //console.log('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection);//Show it works for now
     }
-    console.log('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection);//Show it works for now
 }
+
 function comparePlay(playerSelection, computerSelection){
 
         
@@ -34,14 +40,14 @@ function comparePlay(playerSelection, computerSelection){
     }
     if (playerSelection == 'ROCK'){
         if (computerSelection == 'SCISSORS'){
-            return ("You win!");
+            return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
         }else{
-        return ("computer wins!");
+        return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }
     }
     if (playerSelection == "SCISSORS"){
         if (computerSelection == "ROCK"){
-            return ("Computer wins!");
+            return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
             return("You win!");
         }
@@ -54,4 +60,4 @@ function comparePlay(playerSelection, computerSelection){
 const playerSelection = "ROCK";
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
-console.log(comparePlay(playerSelection, computerSelection))
+//console.log(comparePlay(playerSelection, computerSelection));
