@@ -29,7 +29,7 @@ function playRound() {
 }
 //Compares results from game
 function comparePlay(){
-    const playerSelection = "PAPER";
+    const playerSelection = "ROCK";
     const computerSelection = computerPlay();
         
     if (playerSelection == computerSelection){
