@@ -29,7 +29,7 @@ function playRound() {
 }
 //Compares results from game
 function comparePlay(){
-    const playerSelection = "ROCK";
+    const playerSelection = "PAPER";
     const computerSelection = computerPlay();
         
     if (playerSelection == computerSelection){
@@ -44,6 +44,13 @@ function comparePlay(){
     }
     if (playerSelection == "SCISSORS"){
         if (computerSelection == "ROCK"){
+            return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
+        }else {
+            return('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
+        }
+    }
+    if (playerSelection == "PAPER"){
+        if (computerSelection == "SCISSORS"){
             return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
             return('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
