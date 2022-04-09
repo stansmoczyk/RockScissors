@@ -33,7 +33,7 @@ function comparePlay(){
     const computerSelection = computerPlay();
         
     if (playerSelection == computerSelection){
-        return ("It's a tie!");
+        return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + " It's a tie!");
     }
     if (playerSelection == 'ROCK'){
         if (computerSelection == 'SCISSORS'){
@@ -46,7 +46,7 @@ function comparePlay(){
         if (computerSelection == "ROCK"){
             return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
-            return("You win!");
+            return('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
         }
     }
 }
