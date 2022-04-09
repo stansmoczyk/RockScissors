@@ -1,6 +1,6 @@
 
 //Random picker for computer to play
-const computerPlay = () => {
+function computerPlay ()  {
     const randomNumber = (Math.floor(Math.random() * 3))
 if (randomNumber === 0){
     return 'ROCK';
@@ -12,28 +12,25 @@ else if (randomNumber === 2){
     return 'SCISSORS';
 }
 }
-//console.log(computerPlay());
 
 
+//Play game
 
-function playRound(playerSelection, computerSelection) {
-    let computerWins = 0;
-    let playerWins = 0;
-    let player = playerSelection;
-    let puter = computerSelection
+function playRound() {
+    // let computerWins = 0;
+    // let playerWins = 0;
 
     for (let i =0; i <5; i++){
          
         //code to play 5 rounds here
-        console.log(comparePlay(player, puter));
-    
-    
-    //console.log('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection);//Show it works for now
+        console.log(comparePlay());
+
     }
 }
-
-function comparePlay(playerSelection, computerSelection){
-
+//Compares results from game
+function comparePlay(){
+    const playerSelection = "ROCK";
+    const computerSelection = computerPlay();
         
     if (playerSelection == computerSelection){
         return ("It's a tie!");
@@ -53,11 +50,5 @@ function comparePlay(playerSelection, computerSelection){
         }
     }
 }
-
-    
-
-
-const playerSelection = "ROCK";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
-//console.log(comparePlay(playerSelection, computerSelection));
+//calls function to play game
+console.log(playRound());
