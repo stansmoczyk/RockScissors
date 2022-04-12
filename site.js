@@ -17,12 +17,14 @@ else if (randomNumber === 2){
 //Play game
 
 function game() {
+    //Code for later to tally totals
     // let computerWins = 0;
     // let playerWins = 0;
 
+    //code to play 5 rounds here
     for (let i =0; i <5; i++){
          
-        //code to play 5 rounds here
+        
         console.log(playRound());
 
     }
