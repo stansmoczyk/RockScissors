@@ -1,6 +1,6 @@
 
 //Random picker for computer to play
-function computerPlay ()  {
+function randomPick ()  {
     const randomNumber = (Math.floor(Math.random() * 3))
 if (randomNumber === 0){
     return 'ROCK';
@@ -16,21 +16,21 @@ else if (randomNumber === 2){
 
 //Play game
 
-function playRound() {
+function game() {
     // let computerWins = 0;
     // let playerWins = 0;
 
     for (let i =0; i <5; i++){
          
         //code to play 5 rounds here
-        console.log(comparePlay());
+        console.log(playRound());
 
     }
 }
 //Compares results from game
-function comparePlay(){
-    const playerSelection = "ROCK";
-    const computerSelection = computerPlay();
+function playRound(){
+    const playerSelection = randomPick();
+    const computerSelection = randomPick();
         
     if (playerSelection == computerSelection){
         return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + " It's a tie!");
@@ -58,4 +58,4 @@ function comparePlay(){
     }
 }
 //calls function to play game
-console.log(playRound());
+console.log(game());
