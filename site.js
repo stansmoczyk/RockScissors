@@ -37,27 +37,27 @@ function playRound(){
     const computerSelection = randomPick();
         
     if (playerSelection.toUpperCase() == computerSelection){
-        return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + " It's a tie!");
+        return ('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + " It's a tie!");
     }
     else if (playerSelection.toUpperCase() == 'ROCK'){
         if (computerSelection == 'SCISSORS'){
-            return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
+            return ('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + ' You win!');
         }else{
-        return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
+        return ('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }
     }
     else if (playerSelection.toUpperCase() == "SCISSORS"){
         if (computerSelection == "ROCK"){
-            return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
+            return ('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
-            return('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
+            return('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + ' You win!');
         }
     }
     else if (playerSelection.toUpperCase() == "PAPER"){
         if (computerSelection == "SCISSORS"){
-            return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
+            return ('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
-            return('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
+            return('Player chose: ' + playerSelection.toUpperCase() + ' Computer chose: ' + computerSelection + ' You win!');
         }
     }
 }
