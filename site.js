@@ -17,7 +17,7 @@ else if (randomNumber === 2){
 //Play game
 
 function game() {
-    //Code for later to tally totals and display who wins most
+    //Code for later to tally totals and display who wins most need to work on this soon.
     // let computerWins = 0;
     // let playerWins = 0;
 
