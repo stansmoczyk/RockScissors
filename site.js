@@ -22,7 +22,7 @@ function game() {
     // let playerWins = 0;
 
     //code to play 5 rounds here
-    for (let i =0; i <5; i++){
+    for (let i =0; i <2; i++){
          
         
         console.log(playRound());
@@ -31,27 +31,29 @@ function game() {
 }
 //Compares results from game
 function playRound(){
-    const playerSelection = randomPick();
+
+    let playerSelection = prompt('Rock paper or scissors?');
+    //const playerSelection = randomPick();
     const computerSelection = randomPick();
         
-    if (playerSelection == computerSelection){
+    if (playerSelection.toUpperCase() == computerSelection){
         return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + " It's a tie!");
     }
-    if (playerSelection == 'ROCK'){
+    else if (playerSelection.toUpperCase() == 'ROCK'){
         if (computerSelection == 'SCISSORS'){
             return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
         }else{
         return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }
     }
-    if (playerSelection == "SCISSORS"){
+    else if (playerSelection.toUpperCase() == "SCISSORS"){
         if (computerSelection == "ROCK"){
             return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
             return('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' You win!');
         }
     }
-    if (playerSelection == "PAPER"){
+    else if (playerSelection.toUpperCase() == "PAPER"){
         if (computerSelection == "SCISSORS"){
             return ('Player chose: ' + playerSelection + ' Computer chose: ' + computerSelection + ' Computer wins!');
         }else {
