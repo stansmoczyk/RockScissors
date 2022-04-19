@@ -17,10 +17,7 @@ else if (randomNumber === 2){
 //Play game
 
 function game() {
-    //Code for later to tally totals and display who wins most need to work on this soon.
-    // let computerWins = 0;
-    // let playerWins = 0;
-
+    
     //code to play 5 rounds here
     for (let i =0; i <5; i++){
          
@@ -29,7 +26,7 @@ function game() {
 
     }
 }
-//Compares results from game
+//Compares results from game and disply winner to console
 function playRound(){
 
     let playerSelection = prompt('Rock paper or scissors?');
