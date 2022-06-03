@@ -19,12 +19,12 @@ else if (randomNumber === 2){
 function game() {
     
     //code to play 5 rounds here
-    for (let i =0; i <5; i++){
+    // for (let i =0; i <5; i++){
          
         
         console.log(playRound());
 
-    }
+    // }
 }
 //Compares results from game and disply winner to console
 function playRound(){
