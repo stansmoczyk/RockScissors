@@ -60,3 +60,5 @@ function playRound(){
 }
 //calls function to play game
 console.log(game());
+
+//test for Gui_Rock branch
