@@ -1,3 +1,5 @@
+//Original code to make game work in console kept for archive and reference
+
 
 //Random picker for computer to play
 function randomPick ()  {
