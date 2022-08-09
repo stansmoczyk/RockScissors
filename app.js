@@ -34,22 +34,22 @@ function getResults(){
         result = "It's a tie!"
     }
     if (computerChoice === 'Rock' && userChoice === "Paper"){
-        result = "You Win!"
+        result = "Paper covers Rock You Win!"
     }
     if (computerChoice === 'Rock' && userChoice === "Scissors"){
-        result = "You Lost!"
+        result = "Rock crushes Scissors You Lost!"
     }
     if (computerChoice === 'Scissors' && userChoice === "Paper"){
-        result = "You Lost!"
+        result = "Scissors cut Paper You Lost!"
     }
     if (computerChoice === 'Scissors' && userChoice === "Rock"){
-        result = "You Win!"
+        result = "Rock crushes Scissors You Win!"
     }
     if (computerChoice === 'Paper' && userChoice === "Rock"){
-        result = "You Lost!"
+        result = "Paper covers Rock You Lost!"
     }
     if (computerChoice === 'Paper' && userChoice === "Scissors"){
-        result = "You Win!"
+        result = "Scissors cut Paper You Win!"
     }
     resultDisplay.innerHTML = result
 }
